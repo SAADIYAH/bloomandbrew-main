@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #fffaf6;
+  --foreground: #211f1d;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #fffaf6;
+    --foreground: #211f1d;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a,
+button,
+input,
+select {
+  outline-color: #065f46;
+}
+
+::selection {
+  background: #fff176;
+  color: #211f1d;
+}
